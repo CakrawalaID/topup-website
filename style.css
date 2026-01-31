@@ -131,3 +131,11 @@ header {
   font-weight: bold;
   cursor: pointer;
 }
+select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  background: #0f172a;
+  color: white;
+  border: none;
+}
