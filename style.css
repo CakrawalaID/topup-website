@@ -72,3 +72,15 @@ input {
   font-size: 16px;
   cursor: pointer;
 }
+body {
+  background: red;
+}
+body {
+  background: #0b0f19;
+  color: white;
+}
+
+header {
+  padding: 20px;
+  background: #020617;
+}
