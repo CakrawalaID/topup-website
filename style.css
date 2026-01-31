@@ -29,9 +29,10 @@ body {
 
 /* HEADER FLEX */
 .header {
-  display: flex;
-  justify-content: space-between; /* logo di kiri, tombol di kanan */
-  align-items: center;           /* semua item sejajar vertikal */
+  display: flex;                  /* bikin horizontal */
+  justify-content: flex-start;     /* mulai dari kiri */
+  align-items: center;             /* semua item sejajar vertikal */
+  gap: 15px;                       /* spasi antar item */
   padding: 15px 40px;
   background: #1e293b;
 }
@@ -49,22 +50,22 @@ body {
   border-radius: 6px;
   font-weight: bold;
   cursor: pointer;
-  margin-left: 10px; /* spasi antar tombol */
 }
 
 /* WARNA BUTTON */
 .btn-search {
-  background: #3b82f6; /* biru */
+  background: #3b82f6;
   color: white;
 }
 
 .btn-daftar {
-  background: #22c55e; /* hijau */
+  background: #22c55e;
   color: black;
 }
 
-/* HOVER */
+/* HOVER EFFECT */
 .header button:hover {
   opacity: 0.85;
   transition: 0.3s;
 }
+[Logo]  [Search]  [Daftar]
