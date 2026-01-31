@@ -12,3 +12,4 @@ CREATE TABLE topup_history (
     payment_method VARCHAR(20) NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+| Logo | Search | Daftar |
