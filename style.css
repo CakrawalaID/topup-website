@@ -21,29 +21,24 @@ body {
   background: dark_purple;
 }
 body {
-  margin: 0;
+  background: #0f172a;
   font-family: 'Poppins', sans-serif;
-  background: #0f172a; /* background gelap ala Codashop */
-  color: white;
+  margin: 0;
 }
 
-/* HEADER FLEX */
 .header {
   display: flex;
-  justify-content: space-between; /* logo kiri, tombol kanan */
+  justify-content: space-between;
   align-items: center;
   padding: 15px 50px;
   background: linear-gradient(90deg, #1e293b, #0f172a);
   box-shadow: 0 4px 10px rgba(0,0,0,0.5);
 }
 
-/* LOGO */
 .logo-img {
   height: 50px;
-  width: auto;
 }
 
-/* BUTTONS */
 .header button {
   padding: 10px 22px;
   border: none;
@@ -54,30 +49,12 @@ body {
   text-transform: uppercase;
   transition: all 0.3s ease;
   font-size: 14px;
-  display: flex;
-  align-items: center;
-  gap: 6px;
 }
 
-/* WARNA BUTTON */
-.btn-search {
-  background: #1d4ed8;  /* biru Codashop style */
-  color: white;
-}
+.btn-search { background: #1d4ed8; color: white; }
+.btn-daftar { background: #22c55e; color: black; }
 
-.btn-daftar {
-  background: #22c55e; /* hijau Codashop style */
-  color: black;
-}
-
-/* HOVER EFFECT */
 .header button:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0,0,0,0.5);
 }
-
-/* OPTIONAL: icon search style */
-.btn-search i {
-  font-size: 14px;
-}
-[Logo]                                   [Search] [Daftar]
