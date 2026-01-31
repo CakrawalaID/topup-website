@@ -139,3 +139,28 @@ select {
   color: white;
   border: none;
 }
+.game-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.game-card {
+  background: #020617;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: 0.2s;
+}
+
+.game-card:hover {
+  border-color: #38bdf8;
+}
+
+.game-card.active {
+  border-color: #22c55e;
+  background: #0f172a;
+}
