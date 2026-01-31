@@ -56,3 +56,37 @@
 </body>
 </html>
 <link rel="stylesheet" href="style.css">
+<div class="card">
+  <h3>Pilih Game</h3>
+  <select id="gameSelect">
+    <option value="ml">Mobile Legends</option>
+    <option value="ff">Free Fire</option>
+    <option value="pubg">PUBG Mobile</option>
+  </select>
+</div>
+
+<div class="card">
+  <h3>Masukkan User ID</h3>
+
+  <input type="text" id="userId" placeholder="Masukkan User ID">
+
+  <input type="text" id="serverId" placeholder="Server"
+         style="margin-top:10px;">
+</div>
+<script>
+const gameSelect = document.getElementById("gameSelect");
+const serverId = document.getElementById("serverId");
+
+function updateInput() {
+  const game = gameSelect.value;
+
+  if (game === "ml") {
+    serverId.style.display = "block";
+  } else {
+    serverId.style.display = "none";
+  }
+}
+
+gameSelect.addEventListener("change", updateInput);
+updateInput();
+</script>
