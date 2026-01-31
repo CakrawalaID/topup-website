@@ -20,12 +20,20 @@ input, select, button {
 body {
   background: dark_purple;
 }
-body {
-  background: #0f172a;
-  font-family: 'Poppins', sans-serif;
+/* Reset & body */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #0f172a;
+  color: white;
+}
+
+/* HEADER */
 .header {
   display: flex;
   justify-content: space-between;
@@ -35,10 +43,13 @@ body {
   box-shadow: 0 4px 10px rgba(0,0,0,0.5);
 }
 
+/* LOGO */
 .logo-img {
   height: 50px;
+  width: auto;
 }
 
+/* BUTTONS */
 .header button {
   padding: 10px 22px;
   border: none;
@@ -51,10 +62,46 @@ body {
   font-size: 14px;
 }
 
+/* WARNA BUTTON */
 .btn-search { background: #1d4ed8; color: white; }
 .btn-daftar { background: #22c55e; color: black; }
 
+/* HOVER EFFECT */
 .header button:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0,0,0,0.5);
 }
+
+/* BANNER */
+.banner {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.banner h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.banner p {
+  color: #cbd5f5;
+  margin-bottom: 20px;
+}
+
+.btn-main {
+  padding: 12px 25px;
+  background: #22c55e;
+  color: black;
+  font-weight: bold;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.btn-main:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
