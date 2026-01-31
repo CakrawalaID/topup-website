@@ -22,50 +22,62 @@ body {
 }
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #020617;
+  font-family: 'Poppins', sans-serif;
+  background: #0f172a; /* background gelap ala Codashop */
   color: white;
 }
 
 /* HEADER FLEX */
 .header {
-  display: flex;                  /* bikin horizontal */
-  justify-content: flex-start;     /* mulai dari kiri */
-  align-items: center;             /* semua item sejajar vertikal */
-  gap: 15px;                       /* spasi antar item */
-  padding: 15px 40px;
-  background: #1e293b;
+  display: flex;
+  justify-content: space-between; /* logo kiri, tombol kanan */
+  align-items: center;
+  padding: 15px 50px;
+  background: linear-gradient(90deg, #1e293b, #0f172a);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
 }
 
 /* LOGO */
 .logo-img {
-  height: 40px;
+  height: 50px;
   width: auto;
 }
 
-/* BUTTON */
+/* BUTTONS */
 .header button {
-  padding: 10px 18px;
+  padding: 10px 22px;
   border: none;
-  border-radius: 6px;
-  font-weight: bold;
+  border-radius: 8px;
+  font-weight: 600;
   cursor: pointer;
+  margin-left: 15px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
 
 /* WARNA BUTTON */
 .btn-search {
-  background: #3b82f6;
+  background: #1d4ed8;  /* biru Codashop style */
   color: white;
 }
 
 .btn-daftar {
-  background: #22c55e;
+  background: #22c55e; /* hijau Codashop style */
   color: black;
 }
 
 /* HOVER EFFECT */
 .header button:hover {
-  opacity: 0.85;
-  transition: 0.3s;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
 }
-[Logo]  [Search]  [Daftar]
+
+/* OPTIONAL: icon search style */
+.btn-search i {
+  font-size: 14px;
+}
+[Logo]                                   [Search] [Daftar]
