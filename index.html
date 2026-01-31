@@ -1,124 +1,24 @@
-<h1>TEST MUNCUL</h1>
 <!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <title>Top Up Game</title>
+  <title>TopUp Game</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-  <h2>TopUpin</h2>
-</header>
-
-<div class="container">
-
-  <!-- STEP 1 -->
   <div class="card">
-    <h3>1. Masukkan User ID</h3>
-    <input type="text" placeholder="Contoh: 12345678 (Server)">
-  </div>
+    <h2>Top Up Mobile Legends</h2>
 
-  <!-- STEP 2 -->
-  <div class="card">
-    <h3>2. Pilih Nominal</h3>
-    <div class="nominal-grid">
-      <div class="nominal-item">86 Diamond</div>
-      <div class="nominal-item">172 Diamond</div>
-      <div class="nominal-item">257 Diamond</div>
-      <div class="nominal-item">514 Diamond</div>
-    </div>
-  </div>
+    <input type="text" placeholder="User ID">
+    <select>
+      <option>86 Diamonds</option>
+      <option>172 Diamonds</option>
+      <option>257 Diamonds</option>
+    </select>
 
-  <!-- STEP 3 -->
-  <div class="card">
-    <h3>3. Konfirmasi</h3>
-    <button class="btn">Beli Sekarang</button>
+    <button>Top Up Sekarang</button>
   </div>
-  <!DOCTYPE html>
-<html lang="id">
-<head>
-  <meta charset="UTF-8">
-  <title>Test</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-<header>TOPUP TEST</header>
 
 </body>
 </html>
-
-
-</div>
-
-</body>
-</html>
-<link rel="stylesheet" href="style.css">
-<div class="card">
-  <h3>Pilih Game</h3>
-  <select id="gameSelect">
-    <option value="ml">Mobile Legends</option>
-    <option value="ff">Free Fire</option>
-    <option value="pubg">PUBG Mobile</option>
-  </select>
-</div>
-
-<div class="card">
-  <h3>Masukkan User ID</h3>
-
-  <input type="text" id="userId" placeholder="Masukkan User ID">
-
-  <input type="text" id="serverId" placeholder="Server"
-         style="margin-top:10px;">
-</div>
-<script>
-const gameSelect = document.getElementById("gameSelect");
-const serverId = document.getElementById("serverId");
-
-function updateInput() {
-  const game = gameSelect.value;
-
-  if (game === "ml") {
-    serverId.style.display = "block";
-  } else {
-    serverId.style.display = "none";
-  }
-}
-
-gameSelect.addEventListener("change", updateInput);
-updateInput();
-</script>
-<div class="game-list">
-  <div class="game-card active" data-game="ml">Mobile Legends</div>
-  <div class="game-card" data-game="ff">Free Fire</div>
-  <div class="game-card" data-game="pubg">PUBG Mobile</div>
-</div>
-
-<div class="card">
-  <h3>Masukkan User ID</h3>
-  <input type="text" id="userId" placeholder="Masukkan User ID">
-  <input type="text" id="serverId" placeholder="Server"
-         style="margin-top:10px;">
-</div>
-<script>
-const gameCards = document.querySelectorAll(".game-card");
-const serverId = document.getElementById("serverId");
-
-gameCards.forEach(card => {
-  card.addEventListener("click", () => {
-    gameCards.forEach(c => c.classList.remove("active"));
-    card.classList.add("active");
-
-    const game = card.dataset.game;
-
-    if (game === "ml") {
-      serverId.style.display = "block";
-      serverId.placeholder = "Server (contoh: 1234)";
-    } else {
-      serverId.style.display = "none";
-    }
-  });
-});
-</script>
