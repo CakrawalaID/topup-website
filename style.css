@@ -22,6 +22,16 @@ body {
 }
 
 /* NAVBAR: PASTI HORIZONTAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
 .navbar {
   display: flex;                 /* jadikan flex container */
   flex-direction: row;           /* horizontal */
