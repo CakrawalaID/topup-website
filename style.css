@@ -40,45 +40,6 @@ body {
   box-sizing: border-box;
 }
 
-/* ===== NAVBAR ===== */
-.navbar {
-  height: 80px;
-  background: #1e315c;
-}
-
-/* ===== BANNER SLIDESHOW ===== */
-.banner-slideshow {
-  width: 100%;
-  max-width: 800px;
-  height: 400px;
-  margin: 20px auto;
-  position: relative;
-  overflow: hidden;
-}
-
-.banner-slideshow img {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 100%;
-  transition: left 0.5s ease;
-}
-
-.banner-slideshow img.active {
-  left: 0;
-}
-
-.banner-slideshow img {
-  display: none;
-  width: 100%;
-  height: 400px;
-}
-
-.banner-slideshow img.active {
-  display: block;
-}
-
 /* LOGO */
 .logo {
   display: flex;
