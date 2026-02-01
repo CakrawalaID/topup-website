@@ -34,9 +34,7 @@ body {
 }
 
 /* SEARCH – diperpanjang */
-.search input {
-  background-image: url("logo/search.svg");
-}
+.search {
   flex: 1;        /* ini yang bikin search panjang */
 }
 
