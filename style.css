@@ -40,6 +40,30 @@ body {
   box-sizing: border-box;
 }
 
+.navbar {
+  position: fixed;  /* <-- ini bikin banner tertutup navbar */
+  top: 0;
+  width: 100%;
+}
+
+body {
+  padding-top: 80px; /* sesuaikan dengan tinggi navbar */
+}
+
+.banner-slideshow {
+  margin-top: 20px; /* jarak dari navbar */
+}
+
+.navbar {
+  z-index: 10;
+  position: fixed;
+}
+
+.banner-slideshow {
+  position: relative;
+  z-index: 1;
+}
+
 /* LOGO */
 .logo {
   display: flex;
