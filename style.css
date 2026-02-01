@@ -29,7 +29,7 @@ body {
   justify-content: space-between; /* logo kiri, search tengah, tombol kanan */
   gap: 16px;
   padding: 10px 30px;
-  background-color: #1a1a1a;
+  background-color: #25354f;
   width: 100%;
   box-sizing: border-box;
 }
