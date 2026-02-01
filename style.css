@@ -19,7 +19,7 @@ input, select, button {
 }
 body {
   background: dark_purple;
-/* Navbar container */
+/* Container navbar */
 .navbar {
   display: flex;
   align-items: center;
@@ -28,37 +28,36 @@ body {
   background-color: #0f172a;
 }
 
-/* LOGO */
+/* Logo */
 .logo img {
-  height: 70px;       /* ukuran logo */
-  width: auto;        /* proporsional */
-  object-fit: contain; /* supaya tidak terpotong */
+  height: 70px;   /* ukuran logo */
+  width: auto;    /* proporsional */
+  object-fit: contain;  /* supaya tidak terpotong */
 }
 
-/* SEARCH BAR */
+/* Search bar */
 .search {
-  flex: 1;           /* bikin search panjang tapi bisa diatur max-width */
-  max-width: 560px;  /* bikin search tidak terlalu panjang */
+  flex: 1;
+  max-width: 560px;
 }
 
 .search input {
   width: 100%;
   height: 50px;
   border-radius: 14px;
-  padding-left: 44px; /* ruang untuk icon search */
+  padding-left: 44px; /* ruang icon search */
   border: none;
   background-color: #2563eb;
   color: white;
   font-size: 15px;
 
-  /* icon search */
-  background-image: url("assets/img/search.svg");
+  background-image: url("logo/search.svg");
   background-repeat: no-repeat;
   background-position: 14px center;
   background-size: 18px;
 }
 
-/* TOMBOL DAFTAR */
+/* Tombol daftar */
 .daftar button {
   height: 50px;
   padding: 0 24px;
