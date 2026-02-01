@@ -125,18 +125,6 @@ body {
   background: linear-gradient(135deg, #1e315c, #0f1a3b);
 }
 
-/* Pastikan navbar punya height dan posisi normal */
-.navbar {
-  width: 100%;
-  height: 80px; /* contoh tinggi navbar */
-  display: flex;
-  align-items: center;
-  padding: 0 20px;
-  background-color: #1e315c;
-  position: relative; /* jangan fixed kalau ingin banner pas di bawah */
-  z-index: 10;
-}
-
 .slide {
   width: 100%;
   height: 100%;
