@@ -128,7 +128,7 @@ body {
   position: absolute;
   top: 0;
   left: 100%;
-  transition: left 0.5s ease;
+  transition: left 10s ease;
 }
 
 .banner-slideshow img.active {
