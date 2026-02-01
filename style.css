@@ -165,3 +165,6 @@ body {
 }
 
 .mockup img { ... }     /* styling image */
+body {
+  padding-top: 80px; /* sama dengan tinggi navbar */
+}
