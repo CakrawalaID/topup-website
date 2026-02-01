@@ -20,14 +20,14 @@ input, select, button {
 body {
   background: dark_purple;
 }
-/* NAVBAR FLEX */
 .navbar {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  padding: 16px 32px;
-  background-color: #0f172a;
-  flex-wrap: wrap;
+    position: fixed; /* tetap di atas */
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+body {
+    padding-top: 70px; /* supaya konten tidak tertutup navbar */
 }
 
 /* LOGO */
