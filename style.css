@@ -35,7 +35,7 @@ body {
 
 /* SEARCH – diperpanjang */
 .search {
-  flex: 1;        /* ini yang bikin search panjang */
+  flex: 0,5;        /* ini yang bikin search panjang */
 }
 
 .search input {
