@@ -20,38 +20,38 @@ input, select, button {
 body {
   background: dark_purple;
 }
-/* NAVBAR */
+/* NAVBAR FLEX */
 .navbar {
   display: flex;
   align-items: center;
   gap: 20px;
   padding: 16px 32px;
   background-color: #0f172a;
-  flex-wrap: wrap; /* supaya responsive */
+  flex-wrap: wrap;
 }
 
 /* LOGO */
 .logo img {
   height: 70px;
   width: auto;
-  object-fit: contain;
 }
 
-/* SEARCH */
-.search {
-  flex-grow: 1;    /* search ambil sisa space */
-  min-width: 0;    /* penting supaya flex bisa shrink */
+/* SEARCH CONTAINER */
+.search-container {
+  flex: 1 1 auto;      /* search bisa memanjang & shrink */
+  min-width: 0;        /* penting agar flex grow bekerja */
 }
 
-.search input {
-  width: 100%;
+/* SEARCH INPUT */
+.search-container input {
+  width: 100%;          /* isi seluruh container */
   height: 50px;
   padding: 0 16px;
   border-radius: 14px;
   border: none;
+  font-size: 15px;
   background-color: #2563eb;
   color: white;
-  font-size: 15px;
   box-sizing: border-box;
 }
 
@@ -61,13 +61,14 @@ body {
   padding: 0 24px;
   border-radius: 14px;
   border: none;
-  background: #22c55e;
+  background-color: #22c55e;
+  color: white;
   font-weight: 600;
   cursor: pointer;
 }
 
 .daftar button:hover {
-  background: #16a34a;
+  background-color: #16a34a;
 }
 
 /* RESPONSIVE MOBILE */
