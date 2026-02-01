@@ -20,87 +20,45 @@ input, select, button {
 body {
   background: dark_purple;
 }
-/* Reset & body */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Poppins', sans-serif;
-  background: #0f172a;
-  color: white;
-}
-
-/* HEADER */
-.header {
+.navbar {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 15px 50px;
-  background: linear-gradient(90deg, #1e293b, #0f172a);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  gap: 15px;
+  padding: 15px 30px;
 }
 
-/* LOGO */
-.logo-img {
-  height: 50px;
+/* LOGO – diperbesar */
+.logo img {
+  height: 55px;   /* 🔥 gedein logo */
   width: auto;
 }
 
-/* BUTTONS */
-.header button {
-  padding: 10px 22px;
+/* SEARCH – diperpanjang */
+.search {
+  flex: 1;        /* ini yang bikin search panjang */
+}
+
+.search input {
+  width: 100%;
+  padding: 14px;
+  border-radius: 10px;
   border: none;
-  border-radius: 8px;
-  font-weight: 600;
-  cursor: pointer;
-  margin-left: 15px;
-  text-transform: uppercase;
-  transition: all 0.3s ease;
-  font-size: 14px;
-}
-
-/* WARNA BUTTON */
-.btn-search { background: #1d4ed8; color: white; }
-.btn-daftar { background: #22c55e; color: black; }
-
-/* HOVER EFFECT */
-.header button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
-}
-
-/* BANNER */
-.banner {
-  text-align: center;
-  padding: 100px 20px;
-}
-
-.banner h1 {
-  font-size: 42px;
-  margin-bottom: 10px;
-}
-
-.banner p {
-  color: #cbd5f5;
-  margin-bottom: 20px;
-}
-
-.btn-main {
-  padding: 12px 25px;
-  background: #22c55e;
-  color: black;
+  background: #1e40af;
+  color: white;
   font-weight: bold;
-  border-radius: 8px;
-  border: none;
-  cursor: pointer;
-  text-transform: uppercase;
-  transition: 0.3s;
 }
 
-.btn-main:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+/* DAFTAR – diperpendek */
+.daftar button {
+  padding: 14px 25px;   /* 🔽 lebih kecil dari search */
+  background: #22c55e;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.daftar button:hover {
+  background: #16a34a;
 }
