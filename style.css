@@ -40,25 +40,6 @@ body {
   box-sizing: border-box;
 }
 
-.navbar {
-  position: fixed;  /* <-- ini bikin banner tertutup navbar */
-  top: 0;
-  width: 100%;
-}
-
-body {
-  padding-top: 80px; /* sesuaikan dengan tinggi navbar */
-}
-
-.banner-slideshow {
-  margin-top: 20px; /* jarak dari navbar */
-}
-
-.navbar {
-  z-index: 10;
-  position: fixed;
-}
-
 .banner-slideshow {
   position: relative;
   z-index: 1;
@@ -156,19 +137,6 @@ body {
   z-index: 10;
 }
 
-/* Banner slideshow */
-.banner-slideshow {
-  width: 100%;
-  max-width: 800px;
-  height: 400px;
-  margin: 0 auto; /* center horizontal */
-  margin-top: 20px; /* jarak dari navbar, bisa sesuaikan */
-  position: relative;
-  overflow: hidden;
-  border-radius: 14px;
-  background: linear-gradient(135deg, #1e315c, #0f1a3b);
-}
-
 .slide {
   width: 100%;
   height: 100%;
@@ -186,9 +154,4 @@ body {
 
 .slide.active {
   left: 0;
-}
-
-.mockup img { ... }     /* styling image */
-body {
-  padding-top: 80px; /* sama dengan tinggi navbar */
 }
