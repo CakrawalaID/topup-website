@@ -19,45 +19,48 @@ input, select, button {
 }
 body {
   background: dark_purple;
-/* Container navbar */
+/* NAVBAR */
 .navbar {
   display: flex;
   align-items: center;
   gap: 20px;
   padding: 16px 32px;
   background-color: #0f172a;
+  flex-wrap: wrap; /* responsive */
 }
 
-/* Logo */
+/* LOGO */
 .logo img {
-  height: 70px;   /* ukuran logo */
-  width: auto;    /* proporsional */
-  object-fit: contain;  /* supaya tidak terpotong */
+  height: 70px;
+  width: auto;
+  object-fit: contain;
 }
 
-/* Search bar */
+/* SEARCH */
 .search {
   flex: 1;
-  max-width: 560px;
+  max-width: 600px; /* panjang maksimal search */
 }
 
 .search input {
   width: 100%;
   height: 50px;
+  padding-left: 44px; /* ruang untuk icon search */
   border-radius: 14px;
-  padding-left: 44px; /* ruang icon search */
   border: none;
-  background-color: #2563eb;
+  background-color: #2563eb; /* warna biru search */
   color: white;
   font-size: 15px;
+  box-sizing: border-box;
 
-  background-image: url("logo/search.svg");
+  /* icon search */
+  background-image: url("assets/img/search.svg");
   background-repeat: no-repeat;
   background-position: 14px center;
   background-size: 18px;
 }
 
-/* Tombol daftar */
+/* TOMBOL DAFTAR */
 .daftar button {
   height: 50px;
   padding: 0 24px;
@@ -66,8 +69,27 @@ body {
   background: #22c55e;
   font-weight: 600;
   cursor: pointer;
+  white-space: nowrap;
 }
 
 .daftar button:hover {
   background: #16a34a;
 }
+
+/* RESPONSIVE */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  .search {
+    max-width: 100%;
+  }
+
+  .daftar button {
+    width: 100%;
+  }
+}
+
