@@ -20,15 +20,6 @@ input, select, button {
 body {
   background: dark_purple;
 }
-.navbar {
-    position: fixed; /* tetap di atas */
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-}
-body {
-    padding-top: 70px; /* supaya konten tidak tertutup navbar */
-}
 
 /* LOGO */
 .logo img {
