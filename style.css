@@ -28,7 +28,7 @@ body {
   align-items: center;           /* vertical center */
   justify-content: space-between; /* logo kiri, search tengah, tombol kanan */
   gap: 16px;
-  padding: 10px 30px;
+  padding: 20px 40px;
   background-color: #19274b;
   width: 100%;
   box-sizing: border-box;
