@@ -35,7 +35,7 @@ body {
   justify-content: space-between; /* logo kiri, search tengah, tombol kanan */
   gap: 16px;
   padding: 20px 40px;
-  background-color: #2F3C5D;
+  background-color: #19274b;
   width: 100%;
   box-sizing: border-box;
 }
