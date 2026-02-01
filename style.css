@@ -41,9 +41,23 @@ body {
 }
 
 /* LOGO */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
 .logo img {
   height: 70px;
   width: auto;
+}
+
+.logo span {
+  font-size: 22px;
+  font-weight: 700;
+  color: white;
+  white-space: nowrap;
 }
 
 /* SEARCH CONTAINER */
