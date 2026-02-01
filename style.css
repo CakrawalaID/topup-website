@@ -28,9 +28,12 @@ body {
 }
 
 /* LOGO – diperbesar */
-.logo img {
-  height: 70px;   /* 🔥 gedein logo */
-  width: auto;
+.logo {
+  width: 200px;
+  height: 70px;
+  background-image: url("logo/logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 /* SEARCH – diperpanjang */
