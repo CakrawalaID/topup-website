@@ -40,11 +40,6 @@ body {
   box-sizing: border-box;
 }
 
-.banner-slideshow {
-  position: relative;
-  z-index: 1;
-}
-
 /* LOGO */
 .logo {
   display: flex;
@@ -111,26 +106,4 @@ body {
   .daftar button {
     width: 100%;
   }
-}
-
-.banner-slideshow {
-  width: 100%;
-  max-width: 800px;
-  height: 400px;
-  margin: 20px auto;
-  position: relative;
-  overflow: hidden;
-}
-
-.banner-slideshow img {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 100%;
-  transition: left 10s ease;
-}
-
-.banner-slideshow img.active {
-  left: 0;
 }
