@@ -53,12 +53,18 @@ body {
 .search input {
   width: 100%;
   height: 50px;
-  padding-left: 16px;  /* cukup untuk teks saja */
+  padding-left: 44px;  /* ruang untuk icon search */
   border-radius: 14px;
   border: none;
   background-color: #2563eb;
   color: white;
   font-size: 15px;
+
+  /* icon search */
+  background-image: url("assets/img/search.svg");
+  background-repeat: no-repeat;
+  background-position: 14px center;
+  background-size: 18px;
 }
 
 /* TOMBOL DAFTAR */
