@@ -1,24 +1,23 @@
 const slides = document.querySelectorAll('.slide');
 const dots = document.querySelectorAll('.dot');
 
-let index = 0;
+let currentIndex = 0;
 
-function showSlide(i) {
-  slides.forEach(slide => slide.classList.remove('active'));
-  dots.forEach(dot => dot.classList.remove('active'));
-
-  slides[i].classList.add('active');
-  dots[i].classList.add('active');
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+    slide.classList.toggle('active', i === index);
+    dots[i].classList.toggle('active', i === index);
+  });
 }
 
 dots.forEach((dot, i) => {
   dot.addEventListener('click', () => {
-    index = i;
-    showSlide(index);
+    currentIndex = i;
+    showSlide(currentIndex);
   });
 });
 
 setInterval(() => {
-  index = (index + 1) % slides.length;
-  showSlide(index);
+  currentIndex = (currentIndex + 1) % slides.length;
+  showSlide(currentIndex);
 }, 4000);
