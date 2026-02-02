@@ -1,10 +1,24 @@
 const slides = document.querySelectorAll('.slide');
-let current = 0;
+const dots = document.querySelectorAll('.dot');
+
+let index = 0;
+
+function showSlide(i) {
+  slides.forEach(slide => slide.classList.remove('active'));
+  dots.forEach(dot => dot.classList.remove('active'));
+
+  slides[i].classList.add('active');
+  dots[i].classList.add('active');
+}
+
+dots.forEach((dot, i) => {
+  dot.addEventListener('click', () => {
+    index = i;
+    showSlide(index);
+  });
+});
 
 setInterval(() => {
-  slides[current].classList.remove('active');
-  current = (current + 1) % slides.length;
-  slides[current].classList.add('active');
-}, 5000); // ganti slide tiap 5 detik
-const slides = document.querySelectorAll('.banner-slideshow img');
-let current = 0;
+  index = (index + 1) % slides.length;
+  showSlide(index);
+}, 4000);
