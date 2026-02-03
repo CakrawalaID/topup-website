@@ -169,3 +169,15 @@ html, body {
     height: 200px; /* sesuaikan dengan kebutuhan */
   }
 }
+body {
+  background-color: #0f172a;
+  color: white;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+img {
+  width: 80%;
+  margin-top: 20px;
+  border-radius: 10px;
+}
