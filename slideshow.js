@@ -21,3 +21,6 @@ setInterval(() => {
   currentIndex = (currentIndex + 1) % slides.length;
   showSlide(currentIndex);
 }, 4000);
+document.addEventListener("DOMContentLoaded", () => {
+  // kode slideshow
+});
