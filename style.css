@@ -169,3 +169,92 @@ html, body {
     height: 200px; /* sesuaikan dengan kebutuhan */
   }
 }
+
+/* RESET DASAR */
+* {
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    background: #0f172a;
+    font-family: Arial, sans-serif;
+    color: white;
+    margin: 0;
+}
+
+/* JUDUL */
+.title {
+    text-align: center;
+    margin: 30px 0;
+}
+
+/* CONTAINER CARD */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* CARD */
+.card {
+    background: #1e293b;
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+/* GAMBAR */
+.card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* NAMA GAME */
+.card p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* EFEK HOVER */
+.card:hover {
+    transform: translateY(-6px);
+    background: #334155;
+}
+
+/* FORM TOP UP */
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+form label {
+    display: block;
+    margin-top: 15px;
+}
+
+form input,
+form select,
+form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+form button {
+    margin-top: 20px;
+    background: #22c55e;
+    font-weight: bold;
+    cursor: pointer;
+}
