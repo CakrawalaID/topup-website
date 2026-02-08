@@ -200,6 +200,7 @@ body {
 /* CARD */
 .card {
     background: #1e315c;
+    background-color: #263f7a;
     border-radius: 12px;
     padding: 15px;
     text-align: center;
