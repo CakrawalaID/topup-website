@@ -177,7 +177,7 @@ html, body {
 
 /* BODY */
 body {
-    background: #1e315c;
+    background: #33539E;
     font-family: Arial, sans-serif;
     color: white;
     margin: 0;
@@ -199,7 +199,7 @@ body {
 
 /* CARD */
 .card {
-    background: #1e315c;
+    background: #33539E;
     border-radius: 12px;
     padding: 15px;
     text-align: center;
@@ -225,7 +225,7 @@ body {
 /* EFEK HOVER */
 .card:hover {
     transform: translateY(-6px);
-    background: #1e315c;
+    background: #33539E;
 }
 
 /* FORM TOP UP */
