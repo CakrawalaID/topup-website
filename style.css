@@ -239,8 +239,10 @@ body {
 }
 
 .game-section {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 card per baris */
+  gap: 20px;
+  padding: 20px;
 }
 
 form input,
