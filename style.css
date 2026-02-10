@@ -238,9 +238,9 @@ body {
     border-radius: 10px;
 }
 
-form label {
-    display: block;
-    margin-top: 15px;
+.game-section {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 form input,
