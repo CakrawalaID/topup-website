@@ -35,7 +35,7 @@ body {
   justify-content: space-between; /* logo kiri, search tengah, tombol kanan */
   gap: 16px;
   padding: 20px 40px;
-  background-color: #19274b;
+  background-color: #141428;
   width: 100%;
   box-sizing: border-box;
 }
@@ -200,7 +200,7 @@ body {
 /* CARD */
 .card {
     background: #1e315c;
-    background-color: #263f7a;
+    background-color: #1E1E2F;
     border-radius: 12px;
     padding: 15px;
     text-align: center;
