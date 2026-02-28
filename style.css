@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background: #2C3E73;
+  background: #25395A;
   color: white;
 }
 
@@ -35,7 +35,7 @@ body {
   justify-content: space-between; /* logo kiri, search tengah, tombol kanan */
   gap: 16px;
   padding: 20px 40px;
-  background-color: #243462;
+  background-color: #2F437E;
   width: 100%;
   box-sizing: border-box;
 }
@@ -199,8 +199,8 @@ body {
 
 /* CARD */
 .card {
-    background: #344B7A;
-    background-color: #344B7A;
+    background: #344E87;
+    background-color: #344E87;
     border-radius: 12px;
     padding: 15px;
     text-align: center;
