@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background: #1A1A1A;
+  background: ##2B3F67;
   color: white;
 }
 
@@ -32,7 +32,7 @@ input, select, button {
   justify-content: space-between; /* logo kiri, search tengah, tombol kanan */
   gap: 16px;
   padding: 20px 40px;
-  background-color: #344E87 !important;
+  background-color: #151F32 !important;
   width: 100%;
   box-sizing: border-box;
 }
