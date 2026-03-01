@@ -196,8 +196,8 @@ body {
 
 /* CARD */
 .card {
-    background: #344E87;
-    background-color: #344E87;
+    background: #151F32 !important;
+    background-color: #151F32 !important;
     border-radius: 12px;
     padding: 15px;
     text-align: center;
